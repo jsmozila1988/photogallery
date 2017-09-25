@@ -4,17 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-
+import { PhotoGalleryComponent, GalleryService } from './PhotoGallery/';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhotoGalleryComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [GalleryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

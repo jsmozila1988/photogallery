@@ -1,0 +1,19 @@
+<div class="big_img">
+    <img src="" alt="" title="">
+    <p>Morbi sed vulputate nunc. Fusce quis dolor eget quam condimentum efficitur sit amet quis est. Aenean tempor dictum ipsum, eu egestas nibh iaculis id. Suspendisse potenti.</p>
+</div>
+<div class="btn">
+    <ul>
+        <li (click)="next()">Next</li>
+        <li (click)="prev()">Prevoius</li>
+    </ul>
+</div>
+<div class="small_img">
+    <div class="small_img_scr">
+        <ul>
+            <li class="active" *ngFor="let image of images">
+                <img [src]="image.imageUrl" title="{{image.imageTitle}}">
+            </li>
+        </ul>
+    </div>
+</div>
